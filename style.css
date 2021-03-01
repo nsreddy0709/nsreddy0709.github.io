@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    color: black;
+}
+.container{
+    margin: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.header{
+    text-align: center;
+    background-color: aqua;
+}
+.footer{
+    text-align: center;
+    background-color: aqua;
+}
+
+.main{
+    text-align: center;
+    background-color: tomato;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: -1;
+}
+.links{
+    text-align: center;
+    background-color: rgba(243, 255, 71, 0.616);
+}
+
+
+.links ul li:hover{
+    background-color: whitesmoke;
+    transition: ease;
+    cursor: pointer;
+}
+.links ul li{
+    display: inline-block;
+    margin: 10px;
+    border: orangered solid 1px;
+    padding: 5px;
+    flex:1;
+    width: 100px;
+    border-radius: 20px;
+}
+
+.main form ,.main form h2{
+    text-align: center;
+    overflow:hidden;
+    font-size:20px;
+    margin:8px 0;
+    border-button:1px solid;
+    padding: 10px;
+}
+.btn
+{
+background:none;
+border : 2px solid;
+color :black;
+padding:5px;
+font-size:18px;
+cursor:pointer;
+}
+
+.childnav{
+    display: none;
+}
+
+.links ul li:hover .childnav{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.links ul li a{
+    display: block;
+    text-decoration: none;
+}
+
+.main img{
+    flex-wrap: wrap;
+    width: 200px;
+}
